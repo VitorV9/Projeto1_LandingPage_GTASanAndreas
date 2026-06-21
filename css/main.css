@@ -9,18 +9,21 @@ header{
     color: #ecf1fc;
 }
 
-header h1{
+header h1,
+#background-section h2{
     font-family: "UnifrakturMaguntia", cursive;
 }
 
-header h1:hover{
+header h1:hover,
+#background-section h2:hover{
     color: #17B117; 
     text-shadow: 0 0 15px rgba(23, 177, 23, 0.8);
     transform: scale(1.05);
     cursor: pointer;
 }
 
-header nav li{
+header nav li,
+body{
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
@@ -40,4 +43,98 @@ header nav li{
 header nav li a{
     text-decoration: none;
     color: #ecf1fc;
+}
+
+#background-section{
+    /* 1. O CAMINHO DA IMAGEM */
+    /* Lembre-se do ../ se o seu arquivo CSS estiver dentro de uma pasta! */
+    background-image: url('../images/imagem_LosSantos.jpg');
+
+    /* 2. O AJUSTE DE TAMANHO */
+    /* Obriga a foto a preencher toda a tela sem distorcer ou esticar */
+    background-size: cover;
+
+    /* 3. O ALINHAMENTO DA FOTO */
+    /* Foca no meio da imagem para não cortar a melhor parte */
+    background-position: center;
+
+    /* 4. A PREVENÇÃO DE BUGS */
+    /* Garante que a foto não vire um mosaico se a tela for muito grande */
+    background-repeat: no-repeat;
+
+    /* 5. A ALTURA (O MAIS IMPORTANTE) */
+    /* Sem isso, a seção vira uma "tira" fina. O 'vh' significa a porcentagem da tela. */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .organization{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;    
+    max-width: 800px;  
+    padding: 0 20px;
+}
+
+section h2,
+section p{
+    color:#fff;
+    height: 40px;
+}
+
+section p{
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+section .organization h2{
+    font-size: xx-large;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.container{
+    width: 1366px;
+    margin: auto auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img{
+    height: 350px;
+    width: 100%;
+}
+
+.articles article{
+    width: 50%;
+    padding: 20px 20px;
+}
+
+#personagens{
+    background-color: #111;
+    color: #fff;
+}
+
+.articles article p{
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+.articles article h3{
+    margin-top: 10px;
+}
+
+#personagens h2{
+    padding: 20px;
+    margin-bottom: 25px;
+    font-size: x-large;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
