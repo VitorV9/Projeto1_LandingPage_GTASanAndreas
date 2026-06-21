@@ -9,7 +9,7 @@ Projeto prático desenvolvido para o curso de Desenvolvimento Front-End. O objet
 
 ## 🔗 Link do Projeto
 O site está hospedado na Vercel e pode ser acessado no link abaixo:
-[Inserir o link da Vercel aqui]
+projeto1-landing-page-gta-san-andreas-73r5wbnun.vercel.app
 
 ## 🛠️ Como executar o projeto localmente
 1. Clone o repositório: `git clone https://github.com/VitorV9/Projeto1_LandingPage_GTASanAndreas.git`
