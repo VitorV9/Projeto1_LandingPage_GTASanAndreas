@@ -125,6 +125,7 @@ section .organization h2{
 .articles article p{
     margin-bottom: 10px;
     font-size: small;
+    font-weight: 500;
 }
 
 .articles article h3{
