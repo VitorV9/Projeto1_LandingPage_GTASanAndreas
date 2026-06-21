@@ -5,7 +5,7 @@
 }
 
 header{
-    background-color: #111;
+    background-color: #5d5959;
     color: #ecf1fc;
 }
 
@@ -23,7 +23,10 @@ header h1:hover,
 }
 
 header nav li,
-body{
+body,
+input,
+textarea,
+form button{
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
@@ -81,7 +84,7 @@ section .organization{
 
 section h2,
 section p{
-    color:#fff;
+    color: #ecf1fc;
     height: 40px;
 }
 
@@ -99,6 +102,7 @@ section .organization h2{
 .container{
     width: 1366px;
     margin: auto auto;
+    max-width: 1366px;
 }
 
 .articles {
@@ -117,9 +121,10 @@ section .organization h2{
     padding: 20px 20px;
 }
 
-#personagens{
+#personagens,
+#duvidas{
     background-color: #111;
-    color: #fff;
+    color: #ecf1fc;
 }
 
 .articles article p{
@@ -138,4 +143,55 @@ section .organization h2{
     font-size: x-large;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+}
+
+#duvidas h2{
+    font-size: larger;
+    padding: 20px 0;
+    color: #5d5959;
+    font-weight: 600;
+}
+
+form{
+    padding: 20px 0;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom:  8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color: #5d5959;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: rgba(156, 150, 150, 1);
+}
+
+input:focus, input:focus{
+    outline-color: #5d5959;
+}
+
+footer{
+    background-color: #5d5959;
+    padding: 20px;
+    color: #ecf0f1;
+    font-weight: 400;
 }
