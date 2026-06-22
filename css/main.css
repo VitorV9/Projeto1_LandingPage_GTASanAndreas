@@ -170,8 +170,8 @@ form textarea{
     height: 180px;
 }
 
-section h3{
-    margin-bottom: 16px;
+#duvidas{
+    padding: 20px auto;
 }
 
 form button{
